@@ -2,11 +2,11 @@
   "name": "api-restaurant",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "dist/src/server.js",
   "scripts": {
     "dev": "tsx --watch src/server.ts",
     "build": "tsc",
-    "start": "node dist/server.js",
+    "start": "node dist/src/server.js",
     "typecheck": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js"
@@ -19,7 +19,8 @@
     "express": "^5.2.1",
     "knex": "^3.3.0",
     "sqlite3": "^6.0.1",
-    "tsx": "^4.23.13"
+    "tsx": "^4.23.13",
+    "zod": "^4.6.5"
   },
   "devDependencies": {
     "@types/express": "^5.0.6",
